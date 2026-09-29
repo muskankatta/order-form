@@ -723,22 +723,22 @@ const PI_TAB = 'Proforma Invoices';
 
 // Two header-band groups for colour coding
 const PI_GROUPS = [
-  { label: 'Proforma Invoice Details', cols: 13, band: '#B5D4F4', title: '#EAF1FA', text: '#042C53' },
+  { label: 'Proforma Invoice Details', cols: 14, band: '#B5D4F4', title: '#EAF1FA', text: '#042C53' },
   { label: 'Collection Entry',         cols: 9,  band: '#9FE1CB', title: '#E7F5EF', text: '#04342C' },
 ];
 
 const PI_HEADERS = [
-  // PI-level (0–12)
+  // PI-level (0–13)
   'PI Number', 'Entity', 'OF Number', 'Customer Name', 'Status',
   'Currency', 'Service', 'Fee Type', 'Line Amount',
-  'Subtotal', 'Tax', 'Grand Total', 'Created By',
-  // Collection-level (13–21)
+  'Subtotal', 'Tax', 'Grand Total', 'Created By', 'PI Date (Approval)',
+  // Collection-level (14–22)
   'Collection Date', 'Collection Amount (Money in Bank)',
   'TDS %', 'TDS Amount', 'Total (Collection + TDS)',
   'Payment Mode', 'Reference / UTR', 'Notes', 'Recorded By',
 ];
 
-const PI_TOTAL_COLS = PI_HEADERS.length; // 22
+const PI_TOTAL_COLS = PI_HEADERS.length; // 23
 const PI_DATA_START = 2; // row 0 = band, row 1 = headers, row 2+ = data
 
 const piEntityLabel = pi => {
@@ -811,6 +811,11 @@ function buildPIRows(pis) {
         // Totals (on every row for filtering)
         ...piTotals,
         fmt(pi.created_by_name || ''),
+        fmt(pi.revops_reviewed_at
+          ? (pi.revops_reviewed_at.toDate
+              ? pi.revops_reviewed_at.toDate().toISOString().split('T')[0]
+              : String(pi.revops_reviewed_at).split('T')[0])
+          : ''),
         // Collection-level
         fmt(colEntry?.date               || ''),
         colEntry?.amount  != null ? Number(colEntry.amount)     : '',
@@ -932,7 +937,7 @@ export async function syncPIToSheets(pis, onProgress, tokenIn) {
     }});
   });
 
-  // Status conditional formatting (column 4 = "Status")
+  // Status conditional formatting (column index 4 = "Status", unchanged)
   const PI_STATUS_FILL = {
     'Pending Approval': { bg: '#fef3c7', fg: '#92400e' },
     'Approved':         { bg: '#d1fae5', fg: '#065f46' },
