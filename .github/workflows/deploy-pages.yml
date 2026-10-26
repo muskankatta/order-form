@@ -31,7 +31,7 @@ jobs:
           VITE_SLACK_BOT_TOKEN:               ${{ secrets.VITE_SLACK_BOT_TOKEN }}
           VITE_BOLTIC_WEBHOOK_URL:            ${{ secrets.VITE_BOLTIC_WEBHOOK_URL }}
           VITE_SHEETS_ID:                     ${{ secrets.VITE_SHEETS_ID }}
-          VITE_BASE_PATH:                     ${{ secrets.VITE_BASE_PATH || '/Order_Form/' }}
+          VITE_BASE_PATH:                     ${{ secrets.VITE_BASE_PATH || '/order-form/' }}
           VITE_FIREBASE_API_KEY:              ${{ secrets.VITE_FIREBASE_API_KEY }}
           VITE_FIREBASE_AUTH_DOMAIN:          ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
           VITE_FIREBASE_PROJECT_ID:           ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
