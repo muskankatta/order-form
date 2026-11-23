@@ -1,3 +1,4 @@
+
 export const SALES_REPS = [
   // ── INDIA TEAM ─────────────────────────────────────────────────────────────
   { id:'3169', name:'Abhishek Dalvi',    slack:'U0A6WDTN1K7', email:'abhishekdalvi@gofynd.com',    team:'India',  role:'Sales',           target:7000000,   targetCurrency:'INR' },
@@ -86,10 +87,10 @@ export const ALLOWED_DOMAINS = ['gofynd.com', 'fynd.team'];
 // Not shown on the PDF. Selectable list + "NA" + "Others" (manual entry).
 export const REVENUE_ARCHITECTS = [
   { id:'1036', name:'Jagadesh',        slack:'U0FJT7S01',   email:'jagadeshsahadevan@gofynd.com' },
+  { id:'1038', name:'Rohit Yadav',        slack:'U0HEX6V54',   email:'rohityadav@gofynd.com' },
   { id:'1392', name:'Atharva Shetye',  slack:'U01T138DQAF', email:'atharvashetye@gofynd.com' },
   { id:'1515', name:'Md. Farhan Khan', slack:'U02HGRSP6AH', email:'farhankhan@gofynd.com' },
   { id:'1650', name:'Kedar Kulkarni',  slack:'U0332TP5GTY', email:'kedarkulkarni@gofynd.com' },
-  { id:'1396', name:'Jay Karia',       slack:'U01T33X34UU', email:'jaykaria@gofynd.com' },
   { id:'1327', name:'Nayan Lathiya',   slack:'U018REY8UA2', email:'nayanlathiya@gofynd.com' },
   { id:'2925', name:'Ankit Jain',      slack:'U08MB9E34RF', email:'ankitjain@gofynd.com' },
   { id:'2364', name:'Het Kothori',     slack:'U04F38YDZEZ', email:'hetkothari@gofynd.com' },
