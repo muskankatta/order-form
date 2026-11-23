@@ -26,7 +26,7 @@ export const SALES_REPS = [
   { id:'1058', name:'Megha Golecha',     slack:'U49BDA6UD',   email:'meghagolecha@gofynd.com',      team:'India',  role:'Sales',           target:null,      targetCurrency:'INR' },
   { id:'3232', name:'Abhijeet Arora',    slack:'U0BMMT2S85S', email:'abhijeetarora@gofynd.com',     team:'India',  role:'Sales',           target:null,      targetCurrency:'INR' },
   { id:'2922', name:'Harsh Rohankar',    slack:'U08LBR1J7PY', email:'harshrohankar@gofynd.com',     team:'India',  role:'KAM',           target:null,      targetCurrency:'INR' },
-  { id:'1523', name:'Foram Shah',    slack:'U02JVTQLDSP', email:'foramshah@gofynd.com',     team:'India',  role:'Onboarding',           target:null,      targetCurrency:'INR' }
+  { id:'1523', name:'Foram Shah',    slack:'U02JVTQLDSP', email:'foramshah@gofynd.com',     team:'India',  role:'Onboarding',           target:null,      targetCurrency:'INR' },
   { id:'NA-IND', name:'NA', slack:'', email:'na_india', team:'India', role:'NA', target:null, targetCurrency:'INR' },
 
   // ── GLOBAL TEAM — MEA ──────────────────────────────────────────────────────
@@ -57,7 +57,7 @@ export const SALES_REPS = [
   { id:'2964', name:'Yash Singh',        slack:'U08SDBAV4LV', email:'yashsingh1@gofynd.com',        team:'RJW', role:'Sales', target:null, targetCurrency:'INR' },
   { id:'2790', name:'Shyam Dixit',       slack:'U07LDUS1EFP', email:'shyamdixit@gofynd.com',        team:'RJW', role:'Sales', target:null, targetCurrency:'INR' },
   { id:'1694', name:'Salman Saudagar',   slack:'U037Y12JSFN', email:'salmansaudagar@gofynd.com',    team:'RJW', role:'COO',   target:null, targetCurrency:'INR' },
-  { id:'NA-RJW', name:'NA', slack:'', email:'na_rjw', team:'RJW', role:'NA', target:null, targetCurrency:'INR' },
+  { id:'NA-RJW', name:'NA', slack:'', email:'na_rjw', team:'RJW', role:'NA', target:null, targetCurrency:'INR' }
 ];
 
 export const REVOPS_USERS = [
@@ -87,7 +87,7 @@ export const ALLOWED_DOMAINS = ['gofynd.com', 'fynd.team'];
 // Not shown on the PDF. Selectable list + "NA" + "Others" (manual entry).
 export const REVENUE_ARCHITECTS = [
   { id:'1036', name:'Jagadesh',        slack:'U0FJT7S01',   email:'jagadeshsahadevan@gofynd.com' },
-  { id:'1038', name:'Rohit Yadav',        slack:'U0HEX6V54',   email:'rohityadav@gofynd.com' },
+  { id:'1038', name:'Rohit Yadav',     slack:'U0HEX6V54',   email:'rohityadav@gofynd.com' },
   { id:'1392', name:'Atharva Shetye',  slack:'U01T138DQAF', email:'atharvashetye@gofynd.com' },
   { id:'1515', name:'Md. Farhan Khan', slack:'U02HGRSP6AH', email:'farhankhan@gofynd.com' },
   { id:'1650', name:'Kedar Kulkarni',  slack:'U0332TP5GTY', email:'kedarkulkarni@gofynd.com' },
